@@ -1,0 +1,72 @@
+WinnScriptatype v1.7 beta - 04/03/08
+===============
+
+This very simple plugin was built for my own use. The idea was to make one
+call for my checkbox, update to the database, and an effect.
+
+I will keep adding to this plugin so keep checking for new updates.
+http://rubyonrailsrailway.com/winnscriptatype
+http://rubyforge.org/projects/winnscriptatype/
+
+*/====== Want to use this plugin with PHP? Now you can!
+* http://www.winn.ws/scriptatypephp
+* http://sourceforge.net/projects/winnscriptatype/
+*/====== WinnScriptatype:PHP
+
+
+Example
+=======
+Must follow step 1 for any of this to work!
+Step 1) First be sure to include prototype and scriptaculous to your view or just use:
+        <%= javascript_include_tag :defaults%>
+
+# Base V1.x
+checkbox_do_fade
+checkbox_do_puff
+checkbox_do_blindup
+checkbox_do_dropout
+
+# Added V1.5
+checkbox_do_fade_and_appear
+checkbox_do_fade_and_blindup
+checkbox_do_fade_and_blinddown
+checkbox_do_fade_and_puff
+checkbox_do_puff_and_fade
+checkbox_do_puff_and_appear
+checkbox_do_puff_and_blindup
+checkbox_do_puff_and_blinddown
+
+# Added V1.7b
+textlink_do_fade
+textlink_do_puff
+textlink_do_blindup
+textlink_do_dropout
+
+# Building the call for two effects
+checkbox_do_fade_and_appear('*','**','***',{****},{*****})
+[Element ID]* This element will receive the first effect (In this example it will be fade)
+[Element ID two]** This element will receive the second effect (In this example it will be appear)
+[Checkbox ID]*** This is the id of the checkbox it self
+
+
+# Building the call for one effect
+checkbox_do_fade('*divYouWantToUpdate', '**checkboxID', ***{:controller => 'site', :action => 'home', :id => list.id},****{:userid => user.id})
+
+
+# Building the call for textlink
+textlink_do_fade('Link Text','divYouWantToUpdate',{***},{****})
+
+
+[Element ID]* This is the name of the element you want to effect such as a div or table (tr,td)...
+
+[Checkbox ID]** This is the id of the checkbox it self
+
+[URL/path]*** this is the url for the update to take place NOTE: always use controller, 
+              action, and id DO NOT place other variables in this block that is for the next block.
+
+[URL/path options]**** This block is used for url options like so: (/path/to/1?userid=1) as you see
+                       userid is 1, this is done by using the url options block. You may send an unlimited number of
+                       url options with this.
+
+=============================================================================================
+Copyright (c) 2008 [Greg Winn] - www.winn.ws | www.rubyonrailsrailway.com, Released under MIT
