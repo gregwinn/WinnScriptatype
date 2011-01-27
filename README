@@ -4,9 +4,6 @@ WinnScriptatype v1.7 beta - 04/03/08
 This very simple plugin was built for my own use. The idea was to make one
 call for my checkbox, update to the database, and an effect.
 
-I will keep adding to this plugin so keep checking for new updates.
-http://rubyonrailsrailway.com/winnscriptatype
-http://rubyforge.org/projects/winnscriptatype/
 
 */====== Want to use this plugin with PHP? Now you can!
 * http://www.winn.ws/scriptatypephp
@@ -69,4 +66,4 @@ textlink_do_fade('Link Text','divYouWantToUpdate',{***},{****})
                        url options with this.
 
 =============================================================================================
-Copyright (c) 2008 [Greg Winn] - www.winn.ws | www.rubyonrailsrailway.com, Released under MIT
+Copyright (c) 2008 [Greg Winn] - www.winn.ws Released under MIT
